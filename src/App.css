@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+
+.container {
+  max-width: 1184px;
+  margin: 0 auto;
+  padding: 0px 40px;
+}
+
+.gray {
+  color: rgb(156, 155, 155);
+}

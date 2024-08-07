@@ -1,0 +1,39 @@
+.nav-up {
+    background-color: #0e001a;
+    color: #fff;
+    font-size: 11px;
+    padding: 12px 0;
+}
+
+.nav-up .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-up .container .nav-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-up .container .nav-left .delivery-span {
+    display: flex;
+    align-items: center;
+}
+
+.nav-up .container .nav-right {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-up .container .nav-right .call-span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .nav-up {
+        display: none;
+    }
+}

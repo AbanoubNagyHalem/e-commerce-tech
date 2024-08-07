@@ -1,0 +1,111 @@
+.nav-down {
+    border-bottom: 1px solid rgb(221, 215, 215);
+    padding: 24px 0;
+}
+
+.nav-down .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-down .container a {
+    flex: 1;
+}
+
+.nav-down .container a img {
+    width: 132px;
+}
+
+.nav-down .container .nav-left {
+    display: flex;
+    gap: 16px;
+    flex: 2;
+}
+
+.nav-down .container .dropdown {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    gap: 9px;
+}
+
+.nav-down .container .nav-left p {
+    color: red;
+    font-weight: 600;
+}
+
+.nav-down .container .search {
+    position: relative;
+    flex: 4;
+    display: flex;
+    align-items: center;
+}
+
+.nav-down .container .search input {
+    width: 100%;
+    height: 48px;
+    border-radius: 8px;
+    border: 1px solid rgb(196, 190, 190);
+    padding: 0 20px;
+    font-size: 16px;
+}
+
+.nav-down .container .search input:focus {
+    border-color: black;
+    outline: none;
+}
+
+.nav-down .container .search .search-icon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    color: gray;
+}
+
+.nav-down .container .nav-right {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-down .container .nav-right .sign-in {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-down .container .nav-right .cart {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+@media only screen and (max-width: 599px) {
+    .nav-down .container .nav-left {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .nav-down .container .nav-right .sign-in {
+        display: none;
+    }
+
+    .nav-down .container .nav-left p {
+        color: red;
+        font-weight: 500;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .nav-down .container .nav-right .sign-in p {
+        display: none;
+    }
+
+    .nav-down .container .nav-right .cart p {
+        display: none;
+    }
+}
