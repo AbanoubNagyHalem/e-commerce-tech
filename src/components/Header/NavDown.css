@@ -29,6 +29,7 @@
     align-items: center;
     font-weight: 600;
     gap: 9px;
+    cursor: pointer;
 }
 
 .nav-down .container .nav-left p {
@@ -69,25 +70,19 @@
     gap: 30px;
 }
 
-.nav-down .container .nav-right .sign-in {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
+.nav-down .container .nav-right .sign-in,
 .nav-down .container .nav-right .cart {
     display: flex;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
 }
-
 
 @media only screen and (max-width: 599px) {
     .nav-down .container .nav-left {
         display: none;
     }
 }
-
 
 @media only screen and (max-width: 1024px) {
     .nav-down .container .nav-right .sign-in {
@@ -101,10 +96,7 @@
 }
 
 @media only screen and (max-width: 1280px) {
-    .nav-down .container .nav-right .sign-in p {
-        display: none;
-    }
-
+    .nav-down .container .nav-right .sign-in p,
     .nav-down .container .nav-right .cart p {
         display: none;
     }

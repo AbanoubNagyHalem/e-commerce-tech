@@ -11,26 +11,16 @@ img {
     bottom: 30px;
 }
 
-.slick-dots li {
-    margin: 0;
-}
-
 .slick-dots li button::before {
     color: white;
     opacity: 1;
-    font-size: 3px;
+    font-size: 12px; /* زيادة الحجم قليلاً لتحسين الرؤية */
 }
 
-.slick-dots li.slick-active button:before {
-    font-size: 8px;
-    color: white;
+.slick-dots li.slick-active button::before {
+    font-size: 16px; /* زيادة الحجم قليلاً لتحسين الرؤية */
 }
 
-
-.slick-prev {
-    display: none !important;
-}
-
-.slick-next {
+.slick-prev, .slick-next {
     display: none !important;
 }

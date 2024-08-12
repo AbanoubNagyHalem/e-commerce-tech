@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Slider from "react-slick";
 
 import img1 from "../../assets/highlight_01_100x100.png";
@@ -27,92 +27,39 @@ const Carousel = () => {
     swipeToSlide: true,
     touchMove: true,
     responsive: [
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 6,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 576,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
+      { breakpoint: 1200, settings: { slidesToShow: 6 } },
+      { breakpoint: 992, settings: { slidesToShow: 4 } },
+      { breakpoint: 768, settings: { slidesToShow: 3 } },
+      { breakpoint: 576, settings: { slidesToShow: 2 } },
     ],
   };
 
+  const items = [
+    { src: img1, title: "Electronics" },
+    { src: img2, title: "Air Conditioners" },
+    { src: img3, title: "Mobiles" },
+    { src: img4, title: "Large Home Appliances" },
+    { src: img5, title: "Small Home Appliances" },
+    { src: img6, title: "Accessories" },
+    { src: img7, title: "Labtop" },
+    { src: img8, title: "Personal Care" },
+    { src: img9, title: "TVs" },
+    { src: img10, title: "Zero Interest" },
+    { src: img11, title: "Summer Essential" },
+    { src: img12, title: "Cash Offers" },
+  ];
+
   return (
-    <Fragment>
-      <div className="container carousel">
-        <Slider {...settings}>
-          <div className="slider-item">
-            <img src={img1} alt="title" className="slider-image" />
-            <div className="slider-title">Electronics</div>
+    <div className="container carousel">
+      <Slider {...settings}>
+        {items.map((item, index) => (
+          <div className="slider-item" key={index}>
+            <img src={item.src} alt={item.title} className="slider-image" />
+            <div className="slider-title">{item.title}</div>
           </div>
-          <div className="slider-item">
-            <img src={img2} alt="title" className="slider-image" />
-            <div className="slider-title">Air Conditioners</div>
-          </div>
-          <div className="slider-item">
-            <img src={img3} alt="title" className="slider-image" />
-            <div className="slider-title">Mobiles</div>
-          </div>
-          <div className="slider-item">
-            <img src={img4} alt="title" className="slider-image" />
-            <div className="slider-title">Large Home Appliances</div>
-          </div>
-          <div className="slider-item">
-            <img src={img5} alt="title" className="slider-image" />
-            <div className="slider-title">Small Home Appliances</div>
-          </div>
-          <div className="slider-item">
-            <img src={img6} alt="title" className="slider-image" />
-            <div className="slider-title">Accessories</div>
-          </div>
-          <div className="slider-item">
-            <img src={img7} alt="title" className="slider-image" />
-            <div className="slider-title">Labtop</div>
-          </div>
-          <div className="slider-item">
-            <img src={img8} alt="title" className="slider-image" />
-            <div className="slider-title">Personal Care</div>
-          </div>
-          <div className="slider-item">
-            <img src={img9} alt="title" className="slider-image" />
-            <div className="slider-title">TVs</div>
-          </div>
-          <div className="slider-item">
-            <img src={img10} alt="title" className="slider-image" />
-            <div className="slider-title">Zero Interest</div>
-          </div>
-          <div className="slider-item">
-            <img src={img11} alt="title" className="slider-image" />
-            <div className="slider-title">Summer Essential</div>
-          </div>
-          <div className="slider-item">
-            <img src={img12} alt="title" className="slider-image" />
-            <div className="slider-title">Cash Offers</div>
-          </div>
-        </Slider>
-      </div>
-    </Fragment>
+        ))}
+      </Slider>
+    </div>
   );
 };
 

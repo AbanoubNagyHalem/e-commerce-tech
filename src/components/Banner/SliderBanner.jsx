@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Slider from "react-slick";
 
 import img1 from "../../assets/slider1.jpg";
@@ -10,7 +10,7 @@ import img5 from "../../assets/slider5.png";
 import "./SliderBanner.css";
 
 const SliderBanner = () => {
-  var settings = {
+  const settings = {
     dots: true,
     infinite: true,
     speed: 500,
@@ -19,28 +19,17 @@ const SliderBanner = () => {
     autoplay: true,
     autoplaySpeed: 3000,
   };
+
   return (
-    <Fragment>
-      <div className="container">
-        <Slider {...settings}>
-          <div>
-            <img src={img1} alt="" />
+    <div className="container">
+      <Slider {...settings}>
+        {[img1, img2, img3, img4, img5].map((img, index) => (
+          <div key={index}>
+            <img src={img} alt={`slider-image-${index}`} />
           </div>
-          <div>
-            <img src={img2} alt="" />
-          </div>
-          <div>
-            <img src={img3} alt="" />
-          </div>
-          <div>
-            <img src={img4} alt="" />
-          </div>
-          <div>
-            <img src={img5} alt="" />
-          </div>
-        </Slider>
-      </div>
-    </Fragment>
+        ))}
+      </Slider>
+    </div>
   );
 };
 
