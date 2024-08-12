@@ -9,12 +9,12 @@ const StaticBanner = () => {
     <div className="container">
       <div className="static">
         <img src={img1} alt="mini" />
-        <p>
+        <p className="firstP">
           Shop all you want and repay in small amounts, every month, for up to
           48 months!
         </p>
-        <p>Open minicash account</p>
-        <p>Learn more about minicash</p>
+        <p className="secondP">Open minicash account</p>
+        <p className="thirdP">Learn more about minicash</p>
       </div>
     </div>
   );

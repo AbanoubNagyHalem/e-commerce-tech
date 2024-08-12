@@ -17,5 +17,28 @@
 }
 
 .container .static img {
-    width: 30%;
+    width: 300px;
+}
+
+.static .firstP {
+    max-width: 300px;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    font-size: 17bpx;
+}
+
+
+.static .secondP {
+    background: #fff;
+    padding: 12px 70px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.static .thirdP {
+    color: #fff;
+    font-weight: 600;
+    margin-top: 18px;
 }
