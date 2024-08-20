@@ -1,0 +1,125 @@
+.top-offers {
+    /* background-image: url(../../assets/multicolor_desktop_1.png); */
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #9f18cd;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin: 40px 0;
+    justify-content: space-around;
+    height: 290px;
+    color: azure;
+}
+
+.top-offers .left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    flex: 3;
+    padding-left: 20px;
+    padding-top: 20px;
+    height: 100%;
+}
+
+.top-offers .left .top {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.top-offers .left .shop {
+    background-color: #fff;
+    color: #000;
+    padding: 8px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.top-offers .right {
+    display: flex;
+    overflow-x: scroll;
+    flex: 9;
+    color: #fff;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    user-select: none;
+}
+
+.top-offers .card {
+    min-width: 156px;
+    height: 242px;
+    border-radius: 8px;
+    background-color: #fff;
+    margin-right: 18px;
+    color: #000;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    cursor: pointer;
+    user-select: none;
+}
+
+.top-offers .card .image {
+    width: 100%;
+    text-align: center;
+}
+
+.top-offers .card img {
+    max-height: 92px;
+    max-width: 92px;
+}
+
+.top-offers .card .title {
+    color: #0e001a;
+    word-break: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    font-size: 13px;
+    line-height: 16px;
+    max-height: 32px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.top-offers .card .price {
+    font-size: .875rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+    letter-spacing: 0;
+    color: #0e001a;
+    margin: 0;
+}
+
+.top-offers .card .sale {
+    font-size: .75rem;
+    font-weight: 400;
+    line-height: 1rem;
+    letter-spacing: 0;
+    text-decoration-line: line-through;
+    color: #7f8286;
+    padding-left: 4px;
+}
+
+@media only screen and (max-width: 767px) {
+    .top-offers {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .top-offers .right {
+        flex-direction: row;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        width: 100%;
+        margin-top: 20px;
+        padding-bottom: 10px;
+        /* إضافة مساحة لظهور التمرير */
+    }
+}

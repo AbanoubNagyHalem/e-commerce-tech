@@ -1,10 +1,9 @@
 import React, { useRef, useState } from "react";
 
-import "./TopOffers.css";
-
+import "./NewArrival.css";
 import img1 from "../../assets/watch1.jpeg";
 
-const TopOffers = () => {
+const NewArrival = () => {
   const rightRef = useRef(null);
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
@@ -38,9 +37,9 @@ const TopOffers = () => {
   };
 
   return (
-    <div className="top--offers">
+    <div className="new-arrival">
       <div className="container">
-        <div className="title">Top Offers</div>
+        <div className="title">New arrivals</div>
         <div
           className="right"
           ref={rightRef}
@@ -68,4 +67,4 @@ const TopOffers = () => {
   );
 };
 
-export default TopOffers;
+export default NewArrival;

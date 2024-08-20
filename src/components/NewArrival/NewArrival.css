@@ -1,8 +1,8 @@
-.top--offers {
+.new-arrival {
     margin-bottom: 50px;
 }
 
-.top--offers .title {
+.new-arrival .title {
     font-size: 1.15rem;
     font-weight: 600;
     line-height: 1.5rem;
@@ -10,7 +10,7 @@
     margin: 20px 0;
 }
 
-.top--offers .right {
+.new-arrival .right {
     display: flex;
     overflow-x: scroll;
     flex: 9;
@@ -21,7 +21,7 @@
     user-select: none;
 }
 
-.top--offers .card {
+.new-arrival .card {
     min-width: 156px;
     height: 242px;
     border-radius: 8px;
@@ -38,17 +38,17 @@
     user-select: none;
 }
 
-.top--offers .card .image {
+.new-arrival .card .image {
     width: 100%;
     text-align: center;
 }
 
-.top--offers .card img {
+.new-arrival .card img {
     max-height: 92px;
     max-width: 92px;
 }
 
-.top--offers .card .title {
+.new-arrival .card .title {
     color: #0e001a;
     word-break: break-word;
     overflow: hidden;
@@ -61,7 +61,7 @@
     -webkit-box-orient: vertical;
 }
 
-.top--offers .card .price {
+.new-arrival .card .price {
     font-size: .875rem;
     font-weight: 700;
     line-height: 1.25rem;
@@ -70,7 +70,7 @@
     margin: 0;
 }
 
-.top--offers .card .sale {
+.new-arrival .card .sale {
     font-size: .75rem;
     font-weight: 400;
     line-height: 1rem;

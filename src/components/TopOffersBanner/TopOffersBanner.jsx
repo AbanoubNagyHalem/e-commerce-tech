@@ -1,10 +1,8 @@
 import React, { useRef, useState } from "react";
-
-import "./TopOffers.css";
-
 import img1 from "../../assets/watch1.jpeg";
+import "./TopOffersBanner.css";
 
-const TopOffers = () => {
+const TopOffers = ({ text , image}) => {
   const rightRef = useRef(null);
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
@@ -38,9 +36,17 @@ const TopOffers = () => {
   };
 
   return (
-    <div className="top--offers">
-      <div className="container">
-        <div className="title">Top Offers</div>
+    <div className="container">
+      <div
+        className="top-offers"
+        style={{
+          backgroundImage: `url(${image})`,
+        }}
+      >
+        <div className="left">
+          <p className="top">{text}</p>
+          <p className="shop">Shop now</p>
+        </div>
         <div
           className="right"
           ref={rightRef}
