@@ -20,10 +20,10 @@ function App() {
       <SliderBanner />
       <Carousel />
       <StaticBanner />
-      <TopOffersBanner text="Top offers" image={normalBgImg} />
+      <TopOffersBanner text="Top Offers" image={normalBgImg} />
       <NewArrival />
       <TopOffers />
-      <TopOffersBanner text="Minicash offers" image={purpleBgImg} />
+      <TopOffersBanner text="Minicash Offers" image={purpleBgImg} />
     </Fragment>
   );
 }
